@@ -1,0 +1,337 @@
+/* A CSS Framework by Mike Stenhouse of Content with Style */
+
+/* SITE SPECIFIC LAYOUT */
+    body {
+        margin: 0;
+        padding: 0;
+        /*background: white url(images/background.gif) top left repeat-x;*/
+        text-align: center;
+    }
+    div#page {
+		position: absolute;
+		left:0;
+		top:0;
+        /*width: 780px;*/
+		width:935px;
+		margin:  0;
+        padding: 0;
+        text-align: left;
+
+    }
+
+    /* HEADER */
+        div#header {
+            position: relative;
+			height: 100px;
+			padding: 0px;
+            text-align: left;
+
+        }
+
+		div#header p{
+			background-color:#001A7B;
+			width:935px;
+		}
+
+            div#switchLocale {
+                position: absolute;
+                right: 10px;
+            }
+
+            div#chooseLocale {
+                position: absolute;
+                left: 280px;
+                top:12px;
+                z-index:10;
+            }
+
+        div#branding {
+            position:absolute;
+			left: 0;
+
+            margin: 0;
+
+            text-align: left;
+
+        }
+		.divider {
+			position:relative;
+			border-bottom: 1px solid #CC0000;
+			z-index:1;
+		}
+
+        div#search {
+            float: right;
+            width: 49%;
+            margin: 0;
+            padding: 40px 40px 0 0;
+
+            text-align: right;
+        }
+    /* END HEADER */
+
+
+    /* CONTENT */
+        div#content {
+			z-index: 2;
+			min-height:350px;
+        }
+
+        /* for Internet Explorer */
+		/*\*/
+		* html div#content {
+			height: 350px;
+		}
+		/**/
+
+            body#error #content {
+                margin-top: 20px;
+            }
+        /* MAIN */
+            div#main {
+                /*padding: 10px 0 0 35px;*/ /* IE won't work */
+				padding: 10px 0 0 15px;
+            }
+
+                div#main form ul li {
+                    list-style-type: none;
+                    margin-left: 0;
+                }
+        /* END MAIN */
+
+        /* SUB */
+            div#sub h2 {
+                margin-bottom: 5px;
+            }
+
+            div#sub ul {
+                margin: 0;
+            }
+
+            div#sub ul li {
+                list-style-type: none;
+                margin-left: -30px;
+                padding-bottom: 10px;
+            }
+
+                div#sub p.line {
+                    border-top: 1px dotted #ccc;
+                    margin: 15px 0;
+                }
+
+        /* END SUB */
+
+    /* END CONTENT */
+
+    /* FOOTER */
+        div#footer {
+            padding: 0;
+            text-align: left;
+			font-size:11px;
+        }
+
+            div#footer div#divider {
+                    margin: 0 0 0 0;
+
+            }
+
+            div#footer div#divider div {
+                    margin: 1px 0 0 0;
+
+            }
+
+            div#footer .left {
+                    float: left;
+            }
+
+            div#footer .right {
+                    float: right;
+            }
+
+			div#footer p#emailus {
+					color:#999999;
+					padding: 5px 0 0 10px;
+			}
+
+			div#footer p#emailus a{
+					text-decoration: none;  color: #000000;
+			}
+
+			div#footer p#emailus a:hover{
+					text-decoration: underline; color:#CC0000;
+			}
+
+			div#footer ul { width:100%; margin:0px; padding:0 10px 0 10px; line-height:22px; background-color:#000066; color:#FFFFFF; }
+
+			div#footer li { list-style:none; float:left; }
+
+			div#footer li a{ text-decoration: none;  color: #FFFFFF; }
+
+			div#footer li a:hover{ color:#D1DBEE; }
+
+			div#footer li#copyright { float:right; }
+
+			div#footer a#usb{ color:black;}
+
+			div#footer a#usb:hover{ color:#D1DBEE;}
+
+			div#footer p {
+			/*margin: 0 0 5px 5px;*/
+			}
+			div#footer a{color:#ffffff;}
+			div#usb{ background-color:#000066;
+					 height:20px;
+					 padding-top:5px;
+				 }
+
+    /* END FOOTER */
+/* END LAYOUT */
+
+/* customized layout */
+
+div#content div#basicInfo {
+	position: absolute;
+	left: -198px;
+	top: 10px;
+	width: 190px;
+}
+
+div#content div#basicInfo table td{
+overflow:hidden;
+text-overflow :ellipsis;
+white-space:nowrap;
+empty-cells:show;
+font-size:100%;
+margin:0;
+padding:0 2px 0 px;
+}
+
+div#content div#basicInfo table#contactInfo td{
+border-bottom:1px solid #BBBBBB;
+font-size:90%;
+padding: 0 1px 0 1px;
+}
+
+
+div#content div#basicInfo table#contactInfo tr{
+margin:0;
+padding:0;
+}
+
+div#content div#basicInfo table{
+table-layout:fixed;
+width:190px;
+margin:8px 0;
+padding: 1px 0;
+}
+
+div#content div#basicInfo table#userInfo{
+
+}
+
+
+div#content div#basicInfo table thead{
+font-size:100%;
+}
+
+table#payment {
+margin: 0 0 1.1em 0;
+}
+
+div#accountInfo {
+margin: 0 0 0.5em 0;
+}
+
+div#paymentInfo {
+margin: 0 0 0.5em 0;
+}
+
+div#accountInfo table, div#paymentInfo table {
+	margin:0;
+}
+
+.nomargin {
+	margin:0;
+}
+
+
+.nopadding {
+	padding:0;
+}
+
+/* BUTTONS */
+
+.buttons a, .buttons button{
+    display:block;
+    float:left;
+    margin:0 7px 0 0;
+    background-color:#f5f5f5;
+    border:1px solid #dedede;
+    border-top:1px solid #eee;
+    border-left:1px solid #eee;
+
+    font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+    font-size:100%;
+    line-height:130%;
+    text-decoration:none;
+    font-weight:bold;
+    color:#565656;
+    cursor:pointer;
+    padding:5px 10px 6px 7px; /* Links */
+}
+.buttons button{
+    width:auto;
+    overflow:visible;
+    padding:4px 10px 3px 7px; /* IE6 */
+}
+.buttons button[type]{
+    padding:5px 10px 5px 7px; /* Firefox */
+    line-height:17px; /* Safari */
+}
+*:first-child+html button[type]{
+    padding:4px 10px 3px 7px; /* IE7 */
+}
+.buttons button img, .buttons a img{
+    margin:0 3px -3px 0 !important;
+    padding:0;
+    border:none;
+    width:16px;
+    height:16px;
+}
+
+.buttons button.image {
+	margin:0;
+	padding:0;
+	float:none;
+	background-color:transparent;
+    border-style:none;
+
+}
+
+.buttons button.image img {
+    margin:0 !important;
+    padding:0;
+    border:none;
+    width:24px;
+    height:24px;
+}
+/*** BUTTONS Finished ***/
+
+/*** ROUND CORNER ***/
+
+div.roundcontainer{ margin: 0 10%;background: #d7e9f5}
+
+b.rtop, b.rbottom{display:block;background: #FFF}
+b.rtop b, b.rbottom b{display:block;height: 1px;
+    overflow: hidden; background: #d7e9f5}
+b.r1{margin: 0 5px}
+b.r2{margin: 0 3px}
+b.r3{margin: 0 2px}
+b.rtop b.r4, b.rbottom b.r4{margin: 0 1px;height: 2px}
+
+
+/*** ROUND CORNER FINISHED ***/
+
+.miniMiranda{
+   margin-left:90px;
+}

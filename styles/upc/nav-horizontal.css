@@ -1,0 +1,185 @@
+/* A CSS Framework by Mike Stenhouse of Content with Style */
+
+/* NAV */
+    div#nav {
+        /*font-size: 0.8em;*/
+		/*font: 9px verdana,georgia,arial,helvetica,sans-serif;*/
+		/*overflow: hidden;*/
+		
+    }
+    * html div#nav {
+        /* hide ie/mac \*/
+        height: 1%;
+        /* end hide */
+    }
+    div#nav div.wrapper {
+        position: absolute;
+        left: 0;
+        top: 0;
+		padding:8px 0 0 0;
+    }
+
+    div#nav ul {
+        width: auto;
+
+        margin: 0;
+        padding: 0;
+
+        line-height: 1em;
+        list-style: none;
+    }
+    div#nav li {
+        float: left;
+        display: inline;
+
+        list-style: none;
+		
+        margin: 0;
+        padding: 0 0 0 15px;
+
+        font-size: 1em;
+        line-height: 1em;
+    }
+    div#nav li.last {
+        border-right: none;
+    }
+    div#nav a,
+    div#nav a:link,
+    div#nav a:active,
+    div#nav a:visited {
+        display: inline-block;
+        /* hide from ie/mac \*/
+        display: block;
+        /* end hide */
+        
+        text-decoration: none;
+
+        margin: 0;
+        padding: 5px 0;
+		font-size:11px;
+    }
+    div#nav a:hover {
+        color:#CC0000;
+		background:#fff;
+    }
+
+    div#nav a.current,
+    div#nav a.current:link,
+    div#nav a.current:active,
+    div#nav a.current:visited,
+    div#nav a.current:hover {
+       color: #E2144A;
+       background-color: #FBFAF4;
+    }
+
+    div#nav .pad {
+       padding-left: 10px;
+    }
+/* END NAV */
+
+/* DROP DOWN MENUS */
+    ul#primary-nav, ul#primary-nav ul {
+	    margin: 0;
+        padding: 0;
+        /*background: #fff;*/ /* IE6 Bug */
+        font-size: 100%;
+    }
+
+    ul#primary-nav table {
+    	position:absolute;
+    	top:0; left:0;
+    	border-collapse:collapse;
+    }
+
+
+        ul#primary-nav li {
+            position: relative;
+            list-style: none;
+        }
+
+            ul#primary-nav li a {
+                display: block;
+                text-decoration: none;
+                color: #000;
+                text-align: center;
+                white-space: nowrap;
+				text-transform: uppercase;
+				font-weight:bold;
+            }
+
+        /* Fix IE. Hide from IE Mac \*/
+        * html ul#primary-nav li { float: left; height: 1%; }
+            /* * html ul#primary-nav li a { height: 1%; }*/
+            * html ul#primary-nav ul { width: 189px; }
+            /* * html ul#primary-nav ul li { width: 149px; } */
+        /* End */
+
+            ul#primary-nav ul {
+                position: absolute;
+                *position: relative;
+                visibility: hidden;
+                left: 1px; /* Set 1px less than menu width */
+				top: 1.6em;                
+            }
+
+                ul#primary-nav ul li {
+                    
+                }
+
+                    ul#primary-nav ul li ul {
+                        margin-left: 149px;
+                        margin-top: -23px;
+                    }
+
+                    ul#primary-nav ul li.last {
+                       
+                    }
+
+						ul#primary-nav li ul li {*float : right; }
+						ul#primary-nav li ul li a { font-weight:normal; background-color:#D0D0D0; text-align: left; width:12em; text-transform:none; color:#001A7B; } /* Sub Menu Styles */
+						ul#primary-nav li ul li a:hover { text-decoration:underline; color:#001A7B;background-color:#D0D0D0; }
+                        ul#primary-nav li:hover ul ul,
+                        ul#primary-nav a ul,
+                        ul#primary-nav li:hover ul ul ul,
+                        ul#primary-nav li.over ul ul,
+                        ul#primary-nav li.over ul ul ul { visibility: hidden; } /* Hide sub-menus initially */
+
+						/*adding this to USB-246*/
+                        *:first-child+html ul#primary-nav li ul {display: none;}
+                        *:first-child+html  ul#primary-nav li:hover  ul {display: block;}
+                        /* end of adding this to USB-246*/
+
+                        ul#primary-nav li:hover ul,
+                        ul#primary-nav a:hover ul,
+                        ul#primary-nav li li:hover ul,
+                        ul#primary-nav li li li:hover ul,
+                        ul#primary-nav li.over ul,
+                        ul#primary-nav li li.over ul,
+                        ul#primary-nav li li li.over ul { visibility: visible;} /* The magic */
+
+
+                        ul#primary-nav li.menubar {
+							background: transparent url(images/arrow2.gif) right center no-repeat;
+							padding: 0 10px 0 15px;
+							}
+
+						ul#primary-nav li.menubar:hover {
+							background: transparent url(images/arrow2-hover.gif) right center no-repeat;
+						}
+						
+						ul#primary-nav li:hover,
+                        ul#primary-nav li.over {}
+
+
+/* END DROP DOWN MENUS */
+
+
+a#logout {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+
+body#login div#nav div.wrapper {
+	left:500px;
+}

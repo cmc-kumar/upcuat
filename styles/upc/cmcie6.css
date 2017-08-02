@@ -1,0 +1,11 @@
+ul#primary-nav li ul li {*float : left; }
+ul#primary-nav ul {
+position: absolute;
+visibility: hidden;
+left: 1px; /* Set 1px less than menu width */
+top: 1.6em;
+}
+
+* html #footerCopy{
+    margin-top:-12px;
+}

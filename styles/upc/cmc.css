@@ -1,0 +1,33 @@
+div.hotProgDiv {
+	padding-bottom: 8px;
+	margin-bottom: 10px;
+	background: transparent url(images/bg_hot_prog_bot.gif) no-repeat scroll 0pt 100%;
+}
+
+div.hotProgIn {
+	padding: 0 6px;
+	background: transparent url(images/bg_hot_prog_top.gif) no-repeat scroll 0% 0%;
+}
+
+div.normProgDiv {
+	padding-bottom: 8px;
+	margin-bottom: 10px;
+	background: transparent url(images/bg_norm_prog_bot.gif) no-repeat scroll 0pt 100%;
+}
+
+div.normProgIn {
+	padding: 0 6px;
+	background: transparent url(images/bg_norm_prog_top.gif) no-repeat scroll 0% 0%;
+}
+
+.warning {
+	color:red;	
+}
+
+.table tbody td.warning a,
+.table tbody td.warning a:link,
+.table tbody td.warning a:active,
+.table tbody td.warning a:visited
+{
+	color:red;
+}
